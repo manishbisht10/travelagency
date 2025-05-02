@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+}
+
+:root {
+    --white-color: #FFFFFF;
+    --second-color: #233d2c;
+    --text-color: #565656;
+    --dark-color: #000000;
+    --extra-color: #166527;
+    --dark-green-color: #1a3724;
+    --yellow-color: #f5b963;
+}
+
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background-color: var(--white-color);
+}
+
+.navbar-brand {
+    font-size: 1.385rem;
+    font-weight: 700;
+    font-family: 'poppins', sans-serif;
+    color: var(--extra-color);
+}
+
+.navbar-brand:hover {
+    color: var(--extra-color);
+}
+
+.navbar-brand .sub-text {
+    color: var(--dark-green-color);
+    font-weight: 900;
+}
+
+.nav-link {
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'poppins', sans-serif;
+}
+
+.user-icon-wrapper {
+    width: 45px;
+    height: 45px;
+    background-color: #f1fafa;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #444;
+    padding: 30px auto;
+}
+
+.user-icon-wrapper i {
+    font-size: 24px;
+    color: var(--text-color);
+}
+
+.home-section {
+    width: 100%;
+}
+
+.hero-section {
+    background: linear-gradient(to right, #272727c3, transparent), url('../Assets/Bg/Herosection.png');
+    background-repeat: no-repeat;
+    background-size: fill;
+    color: var(--white-color);
+    padding: 60px 0;
+}
+
+.heading {
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 56px;
+    font-family: 'Source Serif';
+    color: var(--white-color);
+}
+
+.heading .highlight {
+    color: var(--yellow-color);
+}
+
+.paratext {
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    font-weight: 400;
+    font-family: 'poppins', sans-serif;
+}
+
+.rating-box img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: -10px;
+    border: 2px solid var(--dark-color);
+    cursor: pointer;
+}
+
+.highlight-text {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--white-color);
+    font-family: 'poppins', sans-serif;
+}
+
+
+.starBox {
+    padding: 0.5rem 0.5rem;
+    background-color: #1bb580;
+}
+
+.starBox i {
+    color: var(--white-color);
+    font-size: 20px;
+    font-weight: 500;
+}
