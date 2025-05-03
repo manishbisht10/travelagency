@@ -16,6 +16,7 @@
     --extra-color: #166527;
     --dark-green-color: #1a3724;
     --yellow-color: #f5b963;
+    --form-bg: #EAEAEA;
 }
 
 
@@ -46,6 +47,11 @@ body {
     font-size: 16px;
     font-weight: 500;
     font-family: 'poppins', sans-serif;
+    transition: 0.3s ease-in;
+}
+
+.nav-link:hover{
+    color: var(--extra-color);
 }
 
 .user-icon-wrapper {
@@ -63,6 +69,7 @@ body {
 .user-icon-wrapper i {
     font-size: 24px;
     color: var(--text-color);
+    cursor: pointer;
 }
 
 .home-section {
@@ -123,4 +130,48 @@ body {
     color: var(--white-color);
     font-size: 20px;
     font-weight: 500;
+}
+
+.text-light{
+    font-family: 'poppins', sans-serif;
+}
+
+.input-box-container i{
+    font-size: 20px;
+    color: var(--text-color);
+}
+
+.form-control{
+    background: var(--form-bg);
+}
+
+.input-box-container .inputbox{
+    min-width: 250px;
+    padding: 4px 0px;
+    outline: none !important;
+    border: none !important;
+    background: var(--form-bg);
+}
+
+.inputbox::placeholder{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'poppins';
+}
+
+.checkin-container .checkin-box{
+    min-width: 100px;
+    padding: 4px 0px;
+    outline: none !important;
+    border: none !important;
+    background: var(--form-bg);
+}
+
+.checkin-container i{
+    font-size: 20px;
+    color: var(--text-color);
+}
+
+.checkin-box{
+   
 }
