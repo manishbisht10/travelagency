@@ -21,7 +21,7 @@
 
 input::placeholder {
     font-size: 15px;
-    font-weight: 500;
+    font-weight: 400;
     font-family: 'poppins';
     padding: 0px 4px;
 }
@@ -227,7 +227,6 @@ body {
     background: var(--form-bg);
 }
 
-
 .cabins-box {
     background-color: var(--second-color);
     color: var(--white-color);
@@ -246,3 +245,31 @@ body {
     cursor: pointer;
 }
 
+.subheading{
+    font-size: 28px;
+    font-weight: 700;
+    font-family: 'Source Serif';
+    line-height: 26px;
+    position: relative;
+}
+
+.product-section{
+    padding: 50px 0px;
+}
+
+.link-text{
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'poppins';
+    color: var(--text-color);
+}
+
+.subheading::after {
+    content: "";
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    width: 100px; 
+    height: 3px; 
+    background-color: var(--yellow-color); 
+}
