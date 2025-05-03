@@ -5,10 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travel Website</title>
-    <!-- Boxicons CDN -->
+    <!-- Icons CDN -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css">
     <!-- Bootstrap Link -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
     <!-- Main Css Link -->
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -60,7 +62,8 @@
                                     <br> Our
                                     cabin is the perfect getaway for those seeking peace and <br> relaxation in a
                                     natural
-                                    setting.</p>
+                                    setting.
+                                </p>
                             </div>
                             <!-- Trustpilot and faces -->
                             <div class="d-flex align-items-center mt-2">
@@ -89,23 +92,32 @@
                         </div>
                         <div class="col-lg-6">
                         </div>
-                        <div class="search-box bg-white mt-3 row g-2 py-3 rounded">
-                            <div class="col-md-3 d-flex">
-                                <div
-                                    class="input-box-container form-control d-flex justify-content-center align-items-center">
-                                    <i class='bx bx-map-alt mx-2'></i>
-                                    <input type="text" class="px-2 inputbox" placeholder="I want to go">
-                                </div>
+                        <div
+                            class="search-box bg-white mt-3 row g-2 py-3 rounded d-flex align-items-center justify-content-center">
+                            <div
+                                class="Location-container col-md-2 d-flex align-items-center justify-content-start mx-1">
+                                <i class='bx bx-map-alt mx-2'></i>
+                                <input type="text" class="location-box" placeholder="I want to go">
                             </div>
-                            <div class="col-md-2 d-flex bg-danger">
-                                <div class="checkin-container d-flex justify-content-center align-items-center">
-                                    <i class='bx bx-calendar mx-2'></i>
-                                    <input type="text" class="px-2 checkin-box" placeholder="Check in">
-                                </div>
+                            <div
+                                class="Checkin-container col-md-2 d-flex align-items-center justify-content-start mx-1">
+                                <i class='bx bx-calendar mx-2'></i>
+                                <input type="text" class="px-2 checkinbox" id="datepicker" placeholder="Check in">
                             </div>
-                            <div class="col-md-2">vtv</div>
-                            <div class="col-md-2">tfgt</div>
-                            <div class="col-md-3">tgt</div>
+                            <div
+                                class="Checkout-container col-md-2 d-flex align-items-center justify-content-start  mx-1">
+                                <i class='bx bx-calendar mx-2'></i>
+                                <input type="text" class="px-2 checkoutbox" id="datepickers" placeholder="Check out">
+                            </div>
+                            <div
+                                class="Traveller-container col-md-2 d-flex align-items-center justify-content-start mx-1">
+                                <i class="ri-group-fill"></i>
+                                <input type="text" class="Traveller-box" placeholder="Travellers">
+                            </div>
+                            <div
+                                class="Cabins-container col-md-2 d-flex align-items-center justify-content-start mx-1">
+                                <button class="cabins-box">Find available cabins</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -114,9 +126,16 @@
     </main>
 
     <!-- script file link -->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
     <script src="./js/script.js"></script>
+    <script>
+        flatpickr("#datepicker", {
+            minDate: "today",
+            dateFormat: "Y-m-d"
+        });
+    </script>
 </body>
 
 </html>

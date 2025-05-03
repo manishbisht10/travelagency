@@ -19,6 +19,11 @@
     --form-bg: #EAEAEA;
 }
 
+input::placeholder {
+    font-size: 15px;
+    font-weight: 500;
+    font-family: 'poppins';
+}
 
 html,
 body {
@@ -50,7 +55,7 @@ body {
     transition: 0.3s ease-in;
 }
 
-.nav-link:hover{
+.nav-link:hover {
     color: var(--extra-color);
 }
 
@@ -132,46 +137,108 @@ body {
     font-weight: 500;
 }
 
-.text-light{
+.text-light {
     font-family: 'poppins', sans-serif;
 }
 
-.input-box-container i{
-    font-size: 20px;
-    color: var(--text-color);
-}
-
-.form-control{
-    background: var(--form-bg);
-}
-
-.input-box-container .inputbox{
-    min-width: 250px;
-    padding: 4px 0px;
+.Location-container {
+    padding: 2px 10px;
     outline: none !important;
     border: none !important;
     background: var(--form-bg);
 }
 
-.inputbox::placeholder{
-    font-size: 16px;
-    font-weight: 400;
+.Location-container i {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.Location-container .location-box {
+    min-width: 150px;
+    min-height: 45px;
+    outline: none;
+    border: none;
+    background: var(--form-bg);
+}
+
+.Checkin-container {
+    padding: 2px 10px;
+    outline: none !important;
+    border: none !important;
+    background: var(--form-bg);
+}
+
+.Checkin-container i {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.Checkin-container .checkinbox {
+    min-width: 150px;
+    min-height: 45px;
+    outline: none;
+    border: none;
+    background: var(--form-bg);
+}
+
+.Checkout-container {
+    padding: 2px 10px;
+    outline: none !important;
+    border: none !important;
+    background: var(--form-bg);
+}
+
+.Checkout-container i {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.Checkout-container .checkoutbox {
+    min-width: 150px;
+    min-height: 45px;
+    outline: none;
+    border: none;
+    background: var(--form-bg);
+}
+
+.Traveller-container{
+    padding: 2px 10px;
+    outline: none !important;
+    border: none !important;
+    background: var(--form-bg);
+}
+
+.Traveller-container i{
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--text-color);  
+}
+
+.Traveller-container .Traveller-box{
+    min-width: 150px;
+    min-height: 45px;
+    outline: none;
+    border: none;
+    background: var(--form-bg);
+}
+
+.Cabins-container{
+    outline: none !important;
+    border: none !important;
+    background: var(--form-bg);
+}
+
+.Cabins-container .cabins-box{
+    min-width: 250px;
+    min-height: 50px;
+    background: var(--second-color);
+    outline: none;
+    font-size: 15px;
+    border: none;
+    color: var(--white-color);
     font-family: 'poppins';
 }
 
-.checkin-container .checkin-box{
-    min-width: 100px;
-    padding: 4px 0px;
-    outline: none !important;
-    border: none !important;
-    background: var(--form-bg);
-}
-
-.checkin-container i{
-    font-size: 20px;
-    color: var(--text-color);
-}
-
-.checkin-box{
-   
-}
