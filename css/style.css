@@ -225,20 +225,22 @@ body {
     background: var(--form-bg);
 }
 
-.Cabins-container{
-    outline: none !important;
-    border: none !important;
-    background: var(--form-bg);
-}
 
-.Cabins-container .cabins-box{
-    min-width: 250px;
-    min-height: 50px;
-    background: var(--second-color);
-    outline: none;
-    font-size: 15px;
-    border: none;
+.cabins-box {
+    background-color: var(--second-color);
     color: var(--white-color);
-    font-family: 'poppins';
+    border: none;
+    padding: 1px 20px;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    white-space: nowrap;
 }
 
+.cabins-box:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+    cursor: pointer;
+}
