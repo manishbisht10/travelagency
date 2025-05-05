@@ -251,3 +251,12 @@ body {
     line-height: 26px;
     font-family: 'Source Serif';
 }
+
+/* == testimonials section == */
+
+.testimonials{
+    width: 100%;
+    height: 100vh;
+    background: url(../Assets/Bg/Purple_woman.png) no-repeat;
+    background-size: auto;
+}
