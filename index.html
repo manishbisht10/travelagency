@@ -122,7 +122,9 @@
                                 class="search-box bg-white rounded shadow-sm d-flex align-items-center justify-content-center mt-4 px-3 py-3">
                                 <div class="Location-container col-12 col-md-6 col-lg-2 d-flex align-items-center me-2">
                                     <i class='bx bx-map-alt mx-2'></i>
-                                    <input type="text" class="location-box w-100" placeholder="I want to go">
+                                    <input id="locationInput" type="text" class="location-box w-100"
+                                        placeholder="I want to go">
+                                    <div id="location-display" class="mt-2 text-primary fw-bold"></div>
                                 </div>
                                 <div class="Checkin-container col-12 col-md-6 col-lg-2 d-flex align-items-center mx-2">
                                     <i class='bx bx-calendar mx-2'></i>
@@ -149,13 +151,14 @@
             </div>
         </section>
 
-        <!-- Product section start -->
-        <section class="product-section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
+        <!-- Product Cards Section Start -->
+        <section class="product-cards">
+            <div class="container py-4">
+                <div class="row py-2">
+                    <div class="col-lg-12 col-md-12">
                         <div class="content-section">
-                            <h2 class="subheading">Discover our idyllic countryside cabins</h2>
+                            <div class="subheading">Discover our idyllic countryside cabins</div>
+                            <div class="line"></div>
                         </div>
                     </div>
                     <div class="row mt-3">
@@ -169,9 +172,9 @@
                     </div>
                 </div>
             </div>
-            <div class="container my-5">
-                <div class="row g-4">
-                    <!-- Card 1 -->
+            <div class="container py-2">
+                <div class="row g-4 py-3">
+                    <!-- card 1 -->
                     <div class="col-md-6 col-lg-4">
                         <div class="card h-100 border-0 shadow-sm position-relative">
                             <img src="./Assets/cards/card-1.jpg" class="card-img-top img-fluid" alt="Cabin"
@@ -203,8 +206,7 @@
                             </div>
                         </div>
                     </div>
-
-                    <!-- Card 2 -->
+                    <!-- card 2 -->
                     <div class="col-md-6 col-lg-4">
                         <div class="card h-100 border-0 shadow-sm position-relative">
                             <img src="./Assets/cards/card-2.jpg" class="card-img-top img-fluid" alt="Cabin"
@@ -236,8 +238,7 @@
                             </div>
                         </div>
                     </div>
-
-                    <!-- Card 3 -->
+                    <!-- card 3  -->
                     <div class="col-md-6 col-lg-4">
                         <div class="card h-100 border-0 shadow-sm position-relative">
                             <img src="./Assets/cards/card-3.jpg" class="card-img-top img-fluid" alt="Cabin"
@@ -273,13 +274,14 @@
             </div>
         </section>
 
-        <!-- Product section 2 start -->
-        <section class="product-section" style="background: #f2faf9;">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
+        <!-- Product Cards 2 Section Start -->
+        <section class="product" style="background: #e6fef6;">
+            <div class="container py-4">
+                <div class="row py-2">
+                    <div class="col-lg-12 pt-5">
                         <div class="content-section">
                             <h2 class="subheading">Inspiration for your next getaway</h2>
+                            <div class="line"></div>
                         </div>
                     </div>
                     <div class="row mt-3">
@@ -293,21 +295,17 @@
                     </div>
                 </div>
             </div>
-            <div class="container my-5">
-                <div class="row g-4">
+            <div class="container py-4">
+                <div class="row py-3">
                     <!-- Card 1 -->
                     <div class="col-md-6 col-lg-4">
                         <div class="card h-100 border-0 shadow-sm position-relative">
                             <img src="./Assets/cards/card-4.jpg" class="card-img-top img-fluid" alt="Cabin"
                                 style="cursor: pointer;">
-                            <!-- <button class="btn position-absolute top-0 end-0 m-2 bg-white rounded-circle">
-                                <i class='bx bx-heart'></i>
-                            </button> -->
                             <div class="card-body bg-dark text-white rounded-bottom">
                                 <small class="highlight-paratext text-muted text-uppercase">For those who love</small>
                                 <div class="d-flex justify-content-between align-items-center mt-1">
                                     <h5 class="card-title mb-0 text-white card-text">To Explore nature</h5>
-                                    <!-- <span class="fw-bold">£210<small class="text-uppercase">pp</small></span> -->
                                 </div>
                                 <p class="mt-2 small paratext">
                                     Discover some of the most beautiful scenery – from the wonders of Snowdonia to the
@@ -316,7 +314,6 @@
                             </div>
                         </div>
                     </div>
-
                     <!-- Card 2 -->
                     <div class="col-md-6 col-lg-4">
                         <div class="card h-100 border-0 shadow-sm position-relative">
@@ -338,20 +335,15 @@
                             </div>
                         </div>
                     </div>
-
                     <!-- Card 3 -->
                     <div class="col-md-6 col-lg-4">
                         <div class="card h-100 border-0 shadow-sm position-relative">
                             <img src="./Assets/cards/card-6.jpg" class="card-img-top img-fluid" alt="Cabin"
                                 style="cursor: pointer;">
-                            <!-- <button class="btn position-absolute top-0 end-0 m-2 bg-white rounded-circle">
-                                <i class='bx bx-heart'></i>
-                            </button> -->
                             <div class="card-body bg-dark text-white rounded-bottom">
                                 <small class="highlight-paratext text-muted ">For those who have</small>
                                 <div class="d-flex justify-content-between align-items-center mt-1">
                                     <h5 class="card-title mb-0 text-white card-text">four-legged friends</h5>
-                                    <!-- <span class="fw-bold">£210<small class="text-uppercase">pp</small></span> -->
                                 </div>
                                 <p class="mt-2 small paratext">
                                     When going on holiday nobody wants to put their dog in a kennel. So, lets keep the
@@ -367,7 +359,7 @@
         <!-- Testimonials section start -->
         <section class="testimonials">
             <!-- Main Section -->
-            <div class="container my-5">
+            <div class="container">
                 <div class="row py-3">
                     <div class="col-lg-6 col-md-6 mt-5 py-5"></div>
                     <div class="col-lg-6 col-md-6 d-flex flex-column justify-content-center mt-5 py-5">
@@ -394,12 +386,60 @@
             </div>
         </section>
 
-        <!-- FAQ  section start -->
+        <!-- Testimonials 2 section start -->
+        <section class="testimonial">
+            <div class="container py-4">
+                <div class="row py-3">
+                    <div class="container py-5">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h3 class="subheading">Get ready to unwind</h3>
+                                <div class="line-2"></div>
+                                <p class="mt-4 paratext ps-2">
+                                    A cabin getaway can be a wonderful way to relax and reconnect with nature. Many
+                                    cabin rentals are located in beautiful, secluded areas, surrounded by trees and
+                                    other natural beauty.
+                                </p>
+                                <p class="paratext">
+                                    A cabin getaway can be a wonderful way to escape the hustle and bustle of daily life
+                                    and reconnect with nature.
+                                </p>
+                                <a href="#" class="learn-more d-flex">Learn more <i
+                                        class="ri-arrow-drop-right-line"></i></a>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="video-thumbnail" data-bs-toggle="modal" data-bs-target="#videoModal">
+                                    <img src="./Assets/Bg/video-card.png" alt="Nature video preview">
+                                    <div class="play-button">
+                                        <i class="ri-play-circle-fill"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Video Modal -->
+                            <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-lg">
+                                    <div class="modal-content bg-dark">
+                                        <div class="modal-body p-0 position-relative">
+                                            <button type="button" class="btn-close position-absolute end-0 m-2"
+                                                data-bs-dismiss="modal" aria-label="Close"></button>
+                                            <div class="ratio ratio-16x9">
+                                                <iframe id="videoFrame" src="" title="Video"
+                                                    allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
-
-
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
     </main>
+
 
     <!-- script file link -->
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>

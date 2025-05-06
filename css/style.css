@@ -122,7 +122,7 @@ body {
 .paratext {
     font-size: 0.92rem;
     letter-spacing: 0.5px;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 26px;
     font-family: 'poppins', sans-serif;
 }
@@ -219,33 +219,43 @@ body {
     font-size: 16px;
     font-weight: 400;
     font-family: 'poppins';
-    color: var(--text-color);
+    color: var(--dark-color);
 }
 
-.subheading::after {
-    content: "";
-    position: absolute;
-    bottom: -12px;
-    left: 114px;
+.content-section {
+    position: relative;
+}
+
+.subheading {
+    font-size: 28px;
+    font-weight: 700;
+    font-family: 'Source Serif';
+    line-height: 26px;
+}
+
+.line {
     width: 100px;
     height: 3px;
     background-color: var(--yellow-color);
+    position: absolute;
+    bottom: -10px;
 }
 
-.highlight-paratext{
+.highlight-paratext {
     font-size: 15px;
     font-weight: 500;
     font-family: 'poppins', sans-serif;
     color: #d7fff1 !important;
 }
 
-.card-img-top img{
+.card-img-top img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.card-text{
+
+.card-text {
     font-size: 20px;
     font-weight: 600;
     line-height: 26px;
@@ -254,19 +264,69 @@ body {
 
 /* == testimonials section == */
 
-.testimonials{
+.testimonials {
     width: 100%;
-    height: 100vh;
-    background: url(../Assets/Bg/Purple_woman.png) no-repeat;
-    background-size: auto;
+    height: 80vh;
+    background: url(../Assets/Bg/Purple_woman.png) no-repeat center center;
+    background-size: cover;
 }
 
-.testimonials-section{
-    background-color: #f2faf9;
-    width: 100%;
-    height: 100%;
+/* === testimonials 2 section === */
+
+.video-thumbnail {
+    position: relative;
+    cursor: pointer;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
+.video-thumbnail img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
 
-/* == FAQS section == */
+.video-thumbnail .play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 64px;
+    height: 64px;
+    color: var(--white-color);
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
 
+.section-title {
+    font-weight: bold;
+}
+
+.learn-more {
+    text-decoration: none;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.learn-more:hover{
+    color: var(--extra-color);
+}
+
+.learn-more i {
+   font-size: 18px;
+   font-weight: 500;
+   color: var(--text-color) !important;
+}
+
+.line-2{
+    width: 100px;
+    height: 3px;
+    background-color: var(--yellow-color);
+    /* position: absolute; */
+    bottom: -10px;
+}
