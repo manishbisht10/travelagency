@@ -15,7 +15,7 @@
     --dark-color: #000000;
     --extra-color: #166527;
     --dark-green-color: #1a3724;
-    --yellow-color: #f5b963;
+    --yellow-color: #efae53;
     --form-bg: #EAEAEA;
 }
 
@@ -269,6 +269,7 @@ body {
     height: 80vh;
     background: url(../Assets/Bg/Purple_woman.png) no-repeat center center;
     background-size: cover;
+    background-position: center;
 }
 
 /* === testimonials 2 section === */
@@ -313,20 +314,114 @@ body {
     color: var(--text-color);
 }
 
-.learn-more:hover{
+.learn-more:hover {
     color: var(--extra-color);
 }
 
 .learn-more i {
-   font-size: 18px;
-   font-weight: 500;
-   color: var(--text-color) !important;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--text-color) !important;
 }
 
-.line-2{
+.line-2 {
     width: 100px;
     height: 3px;
     background-color: var(--yellow-color);
     /* position: absolute; */
     bottom: -10px;
+}
+
+
+/* === FAQ Section === */
+
+.faq-card {
+    background: var(--yellow-color);
+    color: var(--white-color);
+}
+
+/* === Subfooter section === */
+
+.subfooter {
+    background: url(../Assets/Bg/topfooter.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 80vh;
+}
+
+.getaway-btn {
+    background-color: #e6fef6;
+    color: var(--dark-color);
+    border: none;
+    padding: 12px 20px;
+    border-radius: 4px;
+    font-weight: 400;
+    font-family: 'poppins';
+    font-size: 1rem;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    white-space: nowrap;
+}
+
+/* == Footer Section == */
+.footer {
+    width: 100%;
+    background: #0a0e0f;
+}
+
+.footerText {
+    font-size: 16px;
+    font-weight: 600;
+    color: #d7fff1;
+    font-family: 'poppins', sans-serif;
+}
+
+.list-unstyled li:hover a {
+    color: var(--extra-color) !important;
+    /* padding-left: 0.5rem; */
+    transition: all 0.2s ease-in-out;
+}
+
+.footer .btn-subscribe {
+    background-color: var(--yellow-color);
+    font-family: 'poppins', sans-serif;
+    color: #000;
+    border: none;
+    border-radius: 6px;
+    padding: 0.9rem 1rem;
+    transition: all 0.3s linear;
+}
+
+.footer .btn-subscribe:hover {
+    background-color: var(--extra-color);
+    color: var(--white-color);
+}
+
+.form-control {
+    width: 60%;
+    padding: 0.9rem 1rem;
+}
+
+
+.footer-logo {
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: var(--white-color);
+}
+
+.footer-logo span {
+    color: #1bb580;
+}
+
+.social-icons a {
+    color: #ccc;
+    margin-right: 10px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #fff;
 }
