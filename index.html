@@ -58,7 +58,7 @@
                 </div>
 
                 <!-- Mobile Menu (hidden by default, shown on toggle) -->
-                <div id="mobile-nav" class="d-lg-none d-none mt-3">
+                <div id="mobile-nav" class="d-lg-none collapsed mt-3">
                     <ul class="navbar-nav gap-2">
                         <li><a class="nav-link" href="#">Our Cabins</a></li>
                         <li><a class="nav-link" href="#">Get Inspired</a></li>
@@ -75,7 +75,7 @@
             <div class="container-fluid hero-section">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-6 col-md-3">
+                        <div class="col-lg-6 col-md-6 col-12">
                             <div class="home-content my-4 py-3">
                                 <h2 class="heading">Leave the office behind <br>and <span
                                         class="highlight">unwind</span></span>
@@ -88,21 +88,19 @@
                                 </p>
                             </div>
                             <!-- Trustpilot and faces -->
-                            <div class="d-flex align-items-center mt-2">
-                                <div class="rating-box d-flex">
-                                    <img src="https://randomuser.me/api/portraits/men/32.jpg" class="img-fluid" alt="">
-                                    <img src="https://randomuser.me/api/portraits/women/44.jpg" class="img-fluid"
-                                        alt="">
-                                    <img src="https://randomuser.me/api/portraits/men/76.jpg" class="img-fluid" alt="">
-                                    <img src="https://randomuser.me/api/portraits/women/65.jpg" class="img-fluid"
-                                        alt="">
-                                    <img src="https://randomuser.me/api/portraits/men/85.jpg" class="img-fluid" alt="">
+                            <div class="d-flex align-items-center justify-content-center mt-2 flex-wrap py-md-2 gap-2">
+                                <div class="rating-box d-flex flex-wrap gap-2 pe-2">
+                                    <img src="https://randomuser.me/api/portraits/men/32.jpg"  alt="">
+                                    <img src="https://randomuser.me/api/portraits/women/44.jpg"  alt="">
+                                    <img src="https://randomuser.me/api/portraits/men/76.jpg"  alt="">
+                                    <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="">
+                                    <img src="https://randomuser.me/api/portraits/men/85.jpg"  alt="">
                                 </div>
-                                <div class="ms-3 d-flex">
+                                <div class="ms-3 d-flex ms-md-0">
                                     <span class="text-success d-flex align-items-center justify-content-center"><i
                                             class='bx bxs-star fs-3'></i><span
                                             class="highlight-text m-0 px-2">Trustpilot</span></span><br>
-                                    <span class="badge mx-1 d-flex align-items-center justify-content-center">
+                                    <span class="badge mx-1 d-flex align-items-center justify-content-center mx-md-0">
                                         <a href="#" class="starBox mx-1"><i class='bx bxs-star'></i></a>
                                         <a href="#" class="starBox mx-1"><i class='bx bxs-star'></i></a>
                                         <a href="#" class="starBox mx-1"><i class='bx bxs-star'></i></a>
@@ -117,35 +115,35 @@
                         <div class="col-lg-6 col-md-6">
                         </div>
                         <!-- Search Box -->
-                        <!-- <div class="container">
+                        <div class="container">
                             <div
-                                class="search-box bg-white rounded shadow-sm d-flex align-items-center justify-content-center mt-4 px-3 py-3">
-                                <div class="Location-container col-12 col-md-6 col-lg-2 d-flex align-items-center me-2">
+                                class="search-box bg-white rounded shadow-sm d-flex flex-wrap align-items-center justify-content-center mt-5 px-3 py-4 gap-2">
+                                <div class="Location-container col-12 col-sm-12 col-md-12 col-lg-2 d-flex align-items-center mx-2">
                                     <i class='bx bx-map-alt mx-2'></i>
                                     <input id="locationInput" type="text" class="location-box w-100"
                                         placeholder="I want to go">
                                     <div id="location-display" class="mt-2 text-primary fw-bold"></div>
                                 </div>
-                                <div class="Checkin-container col-12 col-md-6 col-lg-2 d-flex align-items-center mx-2">
+                                <div class="Checkin-container col-12 col-sm-12 col-md-12 col-lg-2 d-flex align-items-center mx-2">
                                     <i class='bx bx-calendar mx-2'></i>
                                     <input type="text" class="px-2 checkinbox w-100" id="datepicker"
                                         placeholder="Check in">
                                 </div>
-                                <div class="Checkout-container col-12 col-md-6 col-lg-2 d-flex align-items-center mx-2">
+                                <div class="Checkout-container col-12 col-sm-12 col-md-12 col-lg-2 d-flex align-items-center mx-2">
                                     <i class='bx bx-calendar mx-2'></i>
                                     <input type="text" class="px-2 checkoutbox w-100" id="datepickers"
                                         placeholder="Check out">
                                 </div>
                                 <div
-                                    class="Traveller-container col-12 col-md-6 col-lg-2 d-flex align-items-center mx-2">
+                                    class="Traveller-container col-12 col-sm-12 col-md-12 col-lg-2 d-flex align-items-center mx-2">
                                     <i class="ri-group-fill mx-2"></i>
                                     <input type="text" class="Traveller-box w-100" placeholder="Travellers">
                                 </div>
-                                <div class="Cabins-container col-12 col-md-6 col-lg-2 d-flex align-items-center ms-2">
+                                <div class="Cabins-container col-12 col-sm-12 col-md-12 col-lg-2 d-flex align-items-center mx-2">
                                     <button class="cabins-box w-100">Find available cabins</button>
                                 </div>
                             </div>
-                        </div> -->
+                        </div>
                     </div>
                 </div>
             </div>
@@ -155,19 +153,19 @@
         <section class="product-cards">
             <div class="container pt-3 pb-5">
                 <div class="row py-2">
-                    <div class="col-lg-12 col-md-12">
+                    <div class="col-lg-12 col-md-12 col-sm-12">
                         <div class="content-section">
                             <div class="subheading">Discover our idyllic countryside cabins</div>
                             <div class="line"></div>
                         </div>
                     </div>
                     <div class="row mt-3">
-                        <div class="col-lg-9">
+                        <div class="col-lg-9 col-md-8 col-sm-8">
                             <p class="paratext">Fully equipped kitchen and bathroom with plenty of walking and cycling
                                 routes to explore.</p>
                         </div>
-                        <div class="col-lg-3 d-flex align-items-center justify-content-end">
-                            <a href="#" class="link-text text-decoration-underline">view all cabins</a>
+                        <div class="col-lg-3 col-md-4 col-sm-4 d-flex align-items-center justify-content-end">
+                            <a href="#" class="link-text text-decoration-underline ">view all cabins</a>
                         </div>
                     </div>
                 </div>
@@ -239,7 +237,7 @@
                         </div>
                     </div>
                     <!-- card 3  -->
-                    <div class="col-md-6 col-lg-4">
+                    <div class="col-md-12 col-lg-4">
                         <div class="card h-100 border-0 shadow-sm position-relative">
                             <img src="./Assets/cards/card-3.jpg" class="card-img-top img-fluid" alt="Cabin"
                                 style="cursor: pointer;">
@@ -285,11 +283,11 @@
                         </div>
                     </div>
                     <div class="row mt-3">
-                        <div class="col-lg-9">
+                        <div class="col-lg-9 col-md-8">
                             <p class="paratext">We've curated some amazing experience to help you find your bext
                                 getaway.</p>
                         </div>
-                        <div class="col-lg-3 d-flex align-items-center justify-content-end">
+                        <div class="col-lg-3 col-md-4 d-flex align-items-center justify-content-end">
                             <a href="#" class="link-text text-decoration-underline">view all experiences</a>
                         </div>
                     </div>
@@ -298,7 +296,7 @@
             <div class="container pt-0 pb-5">
                 <div class="row py-3">
                     <!-- Card 1 -->
-                    <div class="col-md-6 col-lg-4">
+                    <div class="col-md-6 col-lg-4 my-2">
                         <div class="card h-100 border-0 shadow-sm position-relative">
                             <img src="./Assets/cards/card-4.jpg" class="card-img-top img-fluid" alt="Cabin"
                                 style="cursor: pointer;">
@@ -315,7 +313,7 @@
                         </div>
                     </div>
                     <!-- Card 2 -->
-                    <div class="col-md-6 col-lg-4">
+                    <div class="col-md-6 col-lg-4 my-2">
                         <div class="card h-100 border-0 shadow-sm position-relative">
                             <img src="./Assets/cards/card-5.jpg" class="card-img-top img-fluid" alt="Cabin"
                                 style="cursor: pointer;">
@@ -336,7 +334,7 @@
                         </div>
                     </div>
                     <!-- Card 3 -->
-                    <div class="col-md-6 col-lg-4">
+                    <div class="col-md-12 col-lg-4 my-2">
                         <div class="card h-100 border-0 shadow-sm position-relative">
                             <img src="./Assets/cards/card-6.jpg" class="card-img-top img-fluid" alt="Cabin"
                                 style="cursor: pointer;">
@@ -363,7 +361,7 @@
                 <div class="row py-3">
                     <div class="col-lg-6 col-md-6 mt-5 py-5"></div>
                     <div class="col-lg-6 col-md-6 d-flex flex-column justify-content-center mt-5 py-5">
-                        <h2 class="fw-bold heading">A truly wonderful <br> experience</h2>
+                        <h2 class="heading">A truly wonderful <br> experience</h2>
                         <p class="mt-3 paratext text-white">
                             Brilliant for anyone looking to get away from the hustle and bustle of city life or detox
                             from their tech for a few days. I could have stayed another week!
@@ -518,7 +516,7 @@
         <div class="container py-5">
             <div class="row py-4">
                 <!-- Column 1 -->
-                <div class="col-md-3 mb-4">
+                <div class="col-md-3 mb-4 col-sm-6 col-6">
                     <h6 class="footerText">About us</h6>
                     <ul class="list-unstyled py-3">
                         <li class="py-1"><a href="#" class="paratext text-decoration-none text-white">Our story</a></li>
@@ -529,7 +527,7 @@
                     </ul>
                 </div>
                 <!-- Column 2 -->
-                <div class="col-md-3 mb-4">
+                <div class="col-md-3 mb-4 col-sm-6 col-6">
                     <h6 class="footerText">Our cabins</h6>
                     <ul class="list-unstyled py-3">
                         <li class="py-1"><a href="#" class="paratext text-decoration-none text-white">North of
@@ -545,7 +543,7 @@
                     </ul>
                 </div>
                 <!-- Column 3 -->
-                <div class="col-md-3 mb-4">
+                <div class="col-md-3 mb-4 col-sm-6 col-6">
                     <h6 class="footerText">Get inspired</h6>
                     <ul class="list-unstyled py-3">
                         <li class="py-1"><a href="#" class="paratext text-decoration-none text-white">Explore nature</a>
@@ -559,7 +557,7 @@
                     </ul>
                 </div>
                 <!-- Column 4 -->
-                <div class="col-md-3 mb-4">
+                <div class="col-md-3 mb-4 col-sm-6 col-sm-6 col-6">
                     <h6 class="footerText">Support</h6>
                     <ul class="list-unstyled py-3">
                         <li class="py-1"><a href="#" class="paratext text-decoration-none text-white">Help</a></li>
@@ -592,8 +590,8 @@
                 <div class="d-flex justify-content-between align-items-center pt-3">
                     <div class="footer-logo">UNWIND<span
                         class="sub-text text-start">CABINS</span></div>
-                    <div class="paratext text-white">© 2023 UnwindCabins</div>
-                    <div class="social-icons">
+                    <div class="paratext text-white px-4">© 2023 UnwindCabins</div>
+                    <div class="social-icons d-flex flex-wrap">
                         <a href="#"><i class="ri-linkedin-box-fill"></i></a>
                         <a href="#"><i class="ri-twitter-fill"></i></a>
                         <a href="#"><i class="ri-facebook-box-fill"></i></a>

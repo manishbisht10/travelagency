@@ -62,7 +62,12 @@ body {
 
 #hamburger-btn i {
     font-size: 2rem;
+    font-weight: 600;
     cursor: pointer;
+}
+
+#hamburger-btn i:hover{
+    color: var(--extra-color) !important;
 }
 
 #mobile-nav ul {
@@ -72,6 +77,22 @@ body {
 
 #mobile-nav li {
     padding: 0.5rem 0;
+}
+
+#mobile-nav {
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: max-height 0.5s ease, opacity 0.5s ease, transform 0.5s ease;
+    pointer-events: none;
+}
+
+#mobile-nav.show {
+    max-height: 500px; 
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
 }
 
 .user-icon-wrapper {
@@ -128,9 +149,9 @@ body {
 }
 
 .rating-box img {
-    width: 50px;
-    height: 50px;
-    object-fit: 'cover';
+    width: 40px;
+    height: 40px;
+    object-fit: 'contain';
     border-radius: 50%;
     margin-right: -10px;
     border: 2px solid var(--dark-color);

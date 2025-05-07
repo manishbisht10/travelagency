@@ -1,9 +1,10 @@
-@media screen and (min-width:992px) and (max-width:1200px){
-    .heading{
+@media screen and (min-width:992px) and (max-width:1200px) {
+    .heading {
         font-size: 2.6rem !important;
         line-height: 42px;
     }
-    .paratext{
+
+    .paratext {
         font-size: 13px !important;
     }
 
@@ -19,4 +20,130 @@
         font-weight: 400;
         font-family: 'poppins';
     }
+}
+
+@media screen and (min-width:768px) and (max-width:991px) {
+    .heading {
+        font-size: 2.2rem !important;
+        line-height: 42px;
+    }
+
+    .heading br {
+        display: none;
+    }
+
+    .paratext {
+        font-size: 12px !important;
+    }
+
+    .paratext br {
+        display: none;
+    }
+
+    .highlight-text {
+        font-size: 12px !important;
+    }
+
+    .rating-box img {
+        width: 48px;
+        height: 48px;
+        object-fit: contain;
+    }
+
+    .starBox {
+        padding: 0.4rem 0.4rem;
+        background-color: #1bb580;
+    }
+
+    .starBox i {
+        color: var(--white-color);
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .text-light {
+        font-size: 13px;
+    }
+
+    .form-control {
+        width: 65%;
+        padding: 0.5rem 1rem;
+    }
+
+    .footer .btn-subscribe {
+        padding: 0.5rem 1rem;
+    }
+
+    
+    .link-text {
+        text-align: center !important;
+        font-size: 13px;
+    }
+}
+
+
+@media screen and (min-width:576px) and (max-width:767px) {
+    .heading {
+        font-size: 1.8rem !important;
+        line-height: 40px;
+    }
+
+    .heading br {
+        display: none;
+    }
+}
+
+@media screen and (min-width:280px) and (max-width:575px) {
+    .heading br {
+        display: none;
+    }
+
+    .home-content h2{
+        font-size: 2.4rem !important;
+        line-height: 40px;
+        text-align: center;  
+    }
+
+    .home-content p {
+        font-size: 14px !important;
+        text-align: center;
+    }
+
+    .paratext br {
+        display: none;
+    }
+
+    .rating-box img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    
+    .link-text {
+        font-size: 13px;
+    }
+
+    .subheading {
+        font-size: 22px;
+    }
+
+    .starBox {
+        padding: 0.4rem 0.4rem;
+        background-color: #1bb580;
+    }
+
+    .starBox i {
+        color: var(--white-color);
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+.footer-logo {
+    font-size: 15px;
+}
+
+
+
 }
