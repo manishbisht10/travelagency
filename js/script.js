@@ -28,7 +28,7 @@ hamburgerBtn.addEventListener('click', () => {
 
 
 // click the video open popup box 
-const videoSrc = "https://youtu.be/O4Jfs26XwpE?si=dc5s5MrQ3bsY0-e3";
+const videoSrc = "https://youtu.be/8efveLZ3E24?si=Luq96xnY-wqvMe58";
 const videoFrame = document.getElementById("videoFrame");
 
 document.getElementById("videoModal").addEventListener("show.bs.modal", () => {
@@ -85,3 +85,26 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+//FAQ click the icon
+
+document.addEventListener("DOMContentLoaded", function () {
+    const toggleIcons = document.querySelectorAll(".toggle-icon");
+
+    toggleIcons.forEach(function (icon) {
+        icon.addEventListener("click", function () {
+            const container = icon.closest(".faq-card-container");
+            const answer = container.querySelector(".faq-answer");
+
+            if (container.classList.contains("active")) {
+                container.classList.remove("active");
+                icon.classList.remove("rotated");
+                answer.style.maxHeight = null;
+            } else {
+                container.classList.add("active");
+                icon.classList.add("rotated");
+                answer.style.display = "block";
+                answer.style.maxHeight = answer.scrollHeight + "px";
+            }
+        });
+    });
+});

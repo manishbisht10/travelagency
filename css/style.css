@@ -66,7 +66,7 @@ body {
     cursor: pointer;
 }
 
-#hamburger-btn i:hover{
+#hamburger-btn i:hover {
     color: var(--extra-color) !important;
 }
 
@@ -89,7 +89,7 @@ body {
 }
 
 #mobile-nav.show {
-    max-height: 500px; 
+    max-height: 500px;
     opacity: 1;
     transform: translateY(0);
     pointer-events: auto;
@@ -360,6 +360,28 @@ body {
     background: var(--yellow-color);
     color: var(--white-color);
 }
+
+.faq-answer {
+    display: none;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.4s ease, padding 0.4s ease;
+  }
+
+  .faq-card-container.active .faq-answer {
+    display: block; 
+    max-height: 500px; 
+    padding-top: 1rem; 
+    padding-bottom: 1rem;
+  }
+
+  .toggle-icon {
+    transition: transform 0.3s ease;
+  }
+
+  .toggle-icon.rotated {
+    transform: rotate(90deg);
+  }
 
 /* === Subfooter section === */
 
