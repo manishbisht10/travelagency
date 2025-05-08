@@ -356,32 +356,31 @@ body {
 
 /* === FAQ Section === */
 
-.faq-card {
-    background: var(--yellow-color);
-    color: var(--white-color);
-}
-
 .faq-answer {
     display: none;
-    overflow: hidden;
-    max-height: 0;
-    transition: max-height 0.4s ease, padding 0.4s ease;
-  }
+    
+    transition: 0.3s ease;
+}
 
-  .faq-card-container.active .faq-answer {
-    display: block; 
-    max-height: 500px; 
-    padding-top: 1rem; 
-    padding-bottom: 1rem;
-  }
+.faq-card{
+    background: var(--yellow-color);
+}
 
-  .toggle-icon {
+.faq-card-container.active .faq-answer {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'poppins', sans-serif;
+}
+
+.toggle-icon {
     transition: transform 0.3s ease;
-  }
+}
 
-  .toggle-icon.rotated {
+.faq-card-container.active .toggle-icon {
     transform: rotate(90deg);
-  }
+    transition: all 0.5s ease;
+}
 
 /* === Subfooter section === */
 
@@ -406,6 +405,12 @@ body {
     transition: background-color 0.3s ease;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     white-space: nowrap;
+    transition: all 0.3s ease;
+}
+
+.getaway-btn:hover {
+    background-color: var(--extra-color);
+    color: var(--white-color);
 }
 
 /* == Footer Section == */

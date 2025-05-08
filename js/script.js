@@ -87,24 +87,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
 //FAQ click the icon
 
-document.addEventListener("DOMContentLoaded", function () {
-    const toggleIcons = document.querySelectorAll(".toggle-icon");
-
-    toggleIcons.forEach(function (icon) {
-        icon.addEventListener("click", function () {
-            const container = icon.closest(".faq-card-container");
-            const answer = container.querySelector(".faq-answer");
-
-            if (container.classList.contains("active")) {
-                container.classList.remove("active");
-                icon.classList.remove("rotated");
-                answer.style.maxHeight = null;
-            } else {
-                container.classList.add("active");
-                icon.classList.add("rotated");
-                answer.style.display = "block";
-                answer.style.maxHeight = answer.scrollHeight + "px";
-            }
-        });
+document.querySelectorAll('.toggle-icon').forEach(icon => {
+    icon.addEventListener('click', () => {
+        const faqContainer = icon.closest('.faq-card-container');
+        faqContainer.classList.toggle('active');
     });
 });
