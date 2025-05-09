@@ -76,7 +76,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 icon.classList.add("bx-heart");
                 icon.style.color = "black";
             } else {
-                // Fill heart and make it red
                 icon.classList.remove("bx-heart");
                 icon.classList.add("bxs-heart", "active-heart");
                 icon.style.color = "red";
@@ -92,4 +91,41 @@ document.querySelectorAll('.toggle-icon').forEach(icon => {
         const faqContainer = icon.closest('.faq-card-container');
         faqContainer.classList.toggle('active');
     });
+});
+
+
+// Add validation and password strength indicator
+document.addEventListener('DOMContentLoaded', function () {
+    // Form validation
+    const forms = document.querySelectorAll('.needs-validation');
+
+    Array.prototype.slice.call(forms).forEach(form => {
+        form.addEventListener('submit', event => {
+            if (!form.checkValidity()) {
+                event.preventDefault();
+                event.stopPropagation();
+            }
+            form.classList.add('was-validated');
+        }, false);
+    });
+
+    // Password strength indicator
+    const passwordInput = document.getElementById('signupPassword');
+    if (passwordInput) {
+        passwordInput.addEventListener('input', function () {
+            const strengthIndicator = document.querySelector('.strength-indicator');
+            const strength = Math.min(this.value.length / 10, 1);
+
+            if (strength < 0.4) {
+                strengthIndicator.textContent = 'Weak';
+                strengthIndicator.style.color = '#dc3545';
+            } else if (strength < 0.7) {
+                strengthIndicator.textContent = 'Medium';
+                strengthIndicator.style.color = '#ffc107';
+            } else {
+                strengthIndicator.textContent = 'Strong';
+                strengthIndicator.style.color = '#198754';
+            }
+        });
+    }
 });

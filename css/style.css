@@ -113,6 +113,87 @@ body {
     cursor: pointer;
 }
 
+.auth-tabs {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.nav-tabs-border {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    background: #0d6efd;
+    transition: all 0.3s ease;
+}
+
+.nav-pills .nav-link {
+    border-radius: 0;
+    color: #6c757d;
+    background: transparent;
+    position: relative;
+    padding: 1rem 2rem;
+    transition: all 0.3s ease;
+}
+
+.nav-pills .nav-link.active {
+    color: var(--extra-color);
+    background: transparent;
+}
+
+.form-floating > label {
+    padding-left: 2.5rem;
+}
+
+.form-floating > .form-control {
+    padding-left: 2.5rem;
+}
+
+.form-floating > .bx {
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.2rem;
+    color: #6c757d;
+    z-index: 4;
+}
+
+.separator {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #6c757d;
+    margin: 1.5rem 0;
+}
+
+.separator::before,
+.separator::after {
+    content: "";
+    flex: 1;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.separator::before {
+    margin-right: 1rem;
+}
+
+.separator::after {
+    margin-left: 1rem;
+}
+
+.social-auth-buttons .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.password-strength .strength-indicator {
+    font-weight: 600;
+    color: #dc3545;
+}
+
 /* === home section === */
 
 .home-section {

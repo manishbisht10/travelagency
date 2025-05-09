@@ -20,55 +20,163 @@
 
     <main>
         <!-- header section start -->
-        <Header class="shadow-sm">
+        <header class="shadow-sm">
             <nav class="container py-3">
                 <div class="row align-items-center">
                     <div class="col-6 col-lg-4 col-md-3 d-flex align-items-center justify-content-start">
-                        <a class="navbar-brand justify-content-center" href="#">UNWIND<span
-                                class="sub-text text-start">CABINS</span></a>
+                        <a class="navbar-brand" href="#">
+                            UNWIND<span class="sub-text text-start">CABINS</span>
+                        </a>
                     </div>
 
-                    <!-- Hamburger Button (visible on small screens) -->
+                    <!-- Hamburger Button -->
                     <div class="col-6 col-md-9 d-flex d-lg-none justify-content-end">
                         <button id="hamburger-btn" class="btn p-0 border-0 bg-transparent">
                             <i class='bx bx-menu'></i>
                         </button>
                     </div>
 
-                    <!-- Navigation Menu -->
-                    <div class="col-lg-8 d-none d-lg-block" id="nav-menu">
+                    <!-- Desktop Navigation -->
+                    <div class="col-lg-8 d-none d-lg-block">
                         <ul class="navbar-nav d-flex flex-row gap-3 align-items-center justify-content-end">
-                            <li class="nav-item">
-                                <a class="nav-link pe-5" href="#">Our Cabins</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link pe-5" href="#">Get Inspired</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link pe-5" href="#">Gift a stay</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link pe-5" href="#">About us</a>
-                            </li>
-                            <div class="user-icon-wrapper">
+                            <li class="nav-item"><a class="nav-link pe-5" href="#">Our Cabins</a></li>
+                            <li class="nav-item"><a class="nav-link pe-5" href="#">Get Inspired</a></li>
+                            <li class="nav-item"><a class="nav-link pe-5" href="#">Gift a stay</a></li>
+                            <li class="nav-item"><a class="nav-link pe-5" href="#">About us</a></li>
+                            <li class="user-icon-wrapper" data-bs-toggle="modal" data-bs-target="#authModal">
                                 <i class='bx bxs-user-circle'></i>
-                            </div>
+                            </li>
                         </ul>
                     </div>
                 </div>
 
-                <!-- Mobile Menu (hidden by default, shown on toggle) -->
+                <!-- Mobile Navigation -->
                 <div id="mobile-nav" class="d-lg-none collapsed mt-3">
                     <ul class="navbar-nav gap-2">
                         <li><a class="nav-link" href="#">Our Cabins</a></li>
                         <li><a class="nav-link" href="#">Get Inspired</a></li>
                         <li><a class="nav-link" href="#">Gift a stay</a></li>
                         <li><a class="nav-link" href="#">About us</a></li>
-                        <li><i class='bx bxs-user-circle'></i></li>
+                        <li class="user-icon-wrapper" data-bs-toggle="modal" data-bs-target="#authModal">
+                            <i class='bx bxs-user-circle'></i>
+                        </li>
                     </ul>
                 </div>
             </nav>
-        </Header>
+        </header>
+
+        <!-- Auth Modal -->
+        <div class="modal fade" id="authModal" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <!-- Modal Header with Animated Tabs -->
+                    <div class="modal-header border-0 pb-0 position-relative">
+                        <div class="w-100">
+                            <div class="auth-tabs">
+                                <div class="nav-tabs-border"></div>
+                                <ul class="nav nav-pills nav-fill" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#login-tab"
+                                            type="button">
+                                            <i class='bx bx-log-in-circle me-2'></i>Sign In
+                                        </button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#signup-tab"
+                                            type="button">
+                                            <i class='bx bx-user-plus me-2'></i>Create Account
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <button type="button" class="btn-close position-absolute" data-bs-dismiss="modal"
+                            style="top: 1rem; right: 1rem;"></button>
+                    </div>
+
+                    <!-- Modal Body -->
+                    <div class="modal-body tab-content px-4 pt-4">
+                        <!-- Login Form -->
+                        <div class="tab-pane fade show active" id="login-tab">
+                            <form class="needs-validation" novalidate>
+                                <div class="mb-3 form-floating">
+                                    <input type="email" class="form-control w-100" id="loginEmail"
+                                        placeholder="name@example.com" required>
+                                    <label for="loginEmail">Email address</label>
+                                    <div class="invalid-feedback">Please enter a valid email</div>
+                                </div>
+
+                                <div class="mb-4 form-floating position-relative">
+                                    <input type="password" class="form-control w-100" id="loginPassword"
+                                        placeholder="Password" required>
+                                    <label for="loginPassword">Password</label>
+                                </div>
+
+                                <div class="text-end mb-3"> <!-- Added container for forgot password -->
+                                    <a href="#forgot-password" class="smalltext" style="font-family: 'poppins'; font-size: 14px; font-weight: 400; color: #444;">Forgot password?</a>
+                                </div>
+
+                                <button type="submit" class="btn btn-success w-100 py-3 mb-3" style="font-family: 'poppins'; font-size: 15px; font-weight: 500;">
+                                    Continue <i class='bx bx-chevron-right ms-2'></i>
+                                </button>
+
+                                <div class="separator my-4">or continue with</div>
+
+                                <div class="social-auth-buttons d-flex gap-3">
+                                    <button type="button" class="btn btn-outline-secondary flex-fill">
+                                        <i class='bx bxl-google'></i> Google
+                                    </button>
+                                    <button type="button" class="btn btn-outline-secondary flex-fill" >
+                                        <i class='bx bxl-facebook'></i> Facebook
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+
+                        <!-- Signup Form -->
+                        <div class="tab-pane fade" id="signup-tab">
+                            <form class="needs-validation" novalidate>
+                                <div class="mb-3 form-floating">
+                                    <input type="text" class="form-control w-100" id="signupName" placeholder="John Doe"
+                                        required>
+                                    <label for="signupName">Full Name</label>
+                                    <div class="invalid-feedback">Please enter your name</div>
+                                </div>
+
+                                <div class="mb-3 form-floating">
+                                    <input type="email" class="form-control w-100" id="signupEmail"
+                                        placeholder="name@example.com" required>
+                                    <label for="signupEmail">Email address</label>
+                                    <div class="invalid-feedback">Please enter a valid email</div>
+                                </div>
+
+                                <div class="mb-4 form-floating position-relative">
+                                    <input type="password" class="form-control w-100" id="signupPassword"
+                                        placeholder="Password" required>
+                                    <label for="signupPassword">Password</label>
+                                    <div class="password-strength small position-absolute end-0">
+                                        <span class="text-muted">Strength: </span>
+                                        <span class="strength-indicator">Weak</span>
+                                    </div>
+                                </div>
+
+                                <div class="form-check mb-4">
+                                    <input class="form-check-input" type="checkbox" id="termsCheck" required>
+                                    <label class="form-check-label small" for="termsCheck">
+                                        I agree to the <a href="#terms">Terms of Service</a> and
+                                        <a href="#privacy">Privacy Policy</a>
+                                    </label>
+                                </div>
+
+                                <button type="submit" class="btn btn-success w-100 py-3" style="font-family: 'poppins'; font-size: 15px; font-weight: 500;">
+                                    Create Account <i class='bx bx-chevron-right ms-2'></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <!-- Home section start -->
         <section class="home-section">
